@@ -1,0 +1,18 @@
+# nfpm config file for orgalorg
+name: "orgalorg"
+arch: "amd64"
+platform: "linux"
+version: "${VERSION}"
+section: "default"
+priority: "extra"
+provides:
+- orgalorg
+maintainer: "Hiroaki Nakamura <hnakamur@gmail.com>"
+description: |
+  Parallel SSH commands executioner and file synchronization tool
+vendor: "http://github.com/hnakamur/orgalorg"
+homepage: "http://github.com/reconquest/orgalorg"
+license: "MIT"
+bindir: "/usr/bin"
+files:
+  ./orgalorg: "/usr/bin/orgalorg"
